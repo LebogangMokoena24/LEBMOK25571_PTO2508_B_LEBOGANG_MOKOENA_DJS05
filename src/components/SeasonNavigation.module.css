@@ -1,1 +1,120 @@
+.wrapper {
+  margin-top: 2rem;
+}
 
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  background: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.chevron {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.dropdownList {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.35rem);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  min-width: 140px;
+  z-index: 10;
+}
+
+.dropdownOption {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.dropdownOption:hover {
+  background: #f0f2f5;
+}
+
+.dropdownOptionActive {
+  background: #2563eb;
+  color: white;
+}
+
+.dropdownOptionActive:hover {
+  background: #1d4fd1;
+}
+
+.seasonCard {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+}
+
+.seasonSummary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.seasonImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #d9dce1;
+}
+
+.seasonTitle {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+}
+
+.episodeCount {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--grey-text);
+}
+
+.episodeList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.noSeasons {
+  color: var(--grey-text);
+  font-style: italic;
+}
